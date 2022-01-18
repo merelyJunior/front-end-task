@@ -1,31 +1,17 @@
 $(document).ready(function () {
-  // $(function () {
-  //   $.scrollify({
-  //     touchScroll: false,
-  //     setHeights: false,
-  //     overflowScroll: true,
-  //     section: "section",
-  //     easing: "easeOutExpo",
-  //     scrollSpeed: 1100,
-  //     offset: 0,
-  //   });
-  // });
   $("#scrollTo").onepage_scroll({
-    sectionContainer: "section", // контейнер, к которому будет применяться скролл
-    easing: "ease", // Тип анимации "ease", "linear", "ease-in", "ease-out", "ease-in-out"
-    animationTime: 1000, // время анимации
-    pagination: false, // скрыть или отобразить пагинатор
-    updateURL: false, // обновлять URL или нет
+    sectionContainer: "section",
+    easing: "ease",
+    animationTime: 1000,
+    pagination: false,
+    updateURL: false,
     responsiveFallback: 450,
   });
-  // Setting up the Variables
   var bars = document.getElementById("nav-action");
   var nav = document.getElementById("navResponsive");
 
-  //setting up the listener
   bars.addEventListener("click", barClicked, false);
 
-  //setting up the clicked Effect
   function barClicked() {
     bars.classList.toggle("active");
     nav.classList.toggle("active");
@@ -50,17 +36,17 @@ $(document).ready(function () {
       .filter(":first")
       .click();
   });
-});
-$(function () {
-  $("select").selectric({ disableOnMobile: false, nativeOnMobile: false });
-});
-$('.nav__item a[href^="#"]').click(function () {
-  var scroll_el = $(this).attr("href");
-  if ($(scroll_el).length != 0) {
-    $("html, body").animate({ scrollTop: $(scroll_el).offset().top }, 500);
-    $("body").removeClass("lock");
-    $(".nav-responsive ").removeClass("active");
-    $(".bars").removeClass("active");
-  }
-  return false;
+  $(function () {
+    $("select").selectric({ disableOnMobile: false, nativeOnMobile: false });
+  });
+  $('.nav__item a[href^="#"]').click(function () {
+    var scroll_el = $(this).attr("href");
+    if ($(scroll_el).length != 0) {
+      $("html, body").animate({ scrollTop: $(scroll_el).offset().top }, 500);
+      $("body").removeClass("lock");
+      $(".nav-responsive ").removeClass("active");
+      $(".bars").removeClass("active");
+    }
+    return false;
+  });
 });
