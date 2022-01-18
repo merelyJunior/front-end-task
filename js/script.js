@@ -1,4 +1,15 @@
 $(document).ready(function () {
+  $(function () {
+    $.scrollify({
+      touchScroll: false,
+      setHeights: false,
+      overflowScroll: true,
+      section: "section",
+      easing: "easeOutExpo",
+      scrollSpeed: 1100,
+      offset: 0,
+    });
+  });
   // Setting up the Variables
   var bars = document.getElementById("nav-action");
   var nav = document.getElementById("navResponsive");
@@ -30,13 +41,6 @@ $(document).ready(function () {
       })
       .filter(":first")
       .click();
-  });
-});
-$(function () {
-  $.scrollify({
-    section: ".scroll",
-    touchScroll: false,
-    setHeights: true,
   });
 });
 $(function () {
