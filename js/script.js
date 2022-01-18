@@ -1,14 +1,22 @@
 $(document).ready(function () {
-  $(function () {
-    $.scrollify({
-      touchScroll: false,
-      setHeights: false,
-      overflowScroll: true,
-      section: "section",
-      easing: "easeOutExpo",
-      scrollSpeed: 1100,
-      offset: 0,
-    });
+  // $(function () {
+  //   $.scrollify({
+  //     touchScroll: false,
+  //     setHeights: false,
+  //     overflowScroll: true,
+  //     section: "section",
+  //     easing: "easeOutExpo",
+  //     scrollSpeed: 1100,
+  //     offset: 0,
+  //   });
+  // });
+  $("#scrollTo").onepage_scroll({
+    sectionContainer: "section", // контейнер, к которому будет применяться скролл
+    easing: "ease", // Тип анимации "ease", "linear", "ease-in", "ease-out", "ease-in-out"
+    animationTime: 1000, // время анимации
+    pagination: false, // скрыть или отобразить пагинатор
+    updateURL: false, // обновлять URL или нет
+    responsiveFallback: 450,
   });
   // Setting up the Variables
   var bars = document.getElementById("nav-action");

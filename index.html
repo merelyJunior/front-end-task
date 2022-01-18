@@ -7,6 +7,7 @@
     <title>Front end test task</title>
     <link rel="stylesheet" href="./css/selectric.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/onepage-scroll.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -47,174 +48,175 @@
         </nav>
       </div>
     </header>
-    <section id="hero" class="hero">
-      <div class="santa"></div>
-      <div id="cloud" class="cloud">
-        <p>How how how !!!</p>
-        <p>Like it?</p>
-        <p>Scroll down for more !</p>
-      </div>
-      <div class="snowflake"></div>
-      <div class="snow-container"></div>
-      <div class="stars-container"></div>
-      <div class="container">
-        <div class="hero__decs">
-          <h1 class="main-title">Main Site Title</h1>
-          <p class="subtitle">Lorem ipsum descripsum</p>
-          <a href="#" class="cta">Call to action</a>
+    <div id="scrollTo">
+      <section id="hero" class="hero">
+        <div class="santa"></div>
+        <div id="cloud" class="cloud">
+          <p>How how how !!!</p>
+          <p>Like it?</p>
+          <p>Scroll down for more !</p>
         </div>
-      </div>
-    </section>
-    <section id="prod" class="present">
-      <div class="container">
-        <div id="tabs" class="content f-sb">
-          <div class="col">
-            <h2 class="sec-title">
-              At least somewhere you can feel new year atmosphere
-            </h2>
-            <p class="subtitle">Choose your present:</p>
-            <div class="tabs-nav f-sb">
-              <div>
-                <a class="tabs-nav__img" href="#tab-1"
-                  ><img src="/img/new-year-sock 1.png" alt="sock image here"
-                /></a>
+        <div class="snowflake"></div>
+        <div class="snow-container"></div>
+        <div class="stars-container"></div>
+        <div class="container">
+          <div class="hero__decs">
+            <h1 class="main-title">Main Site Title</h1>
+            <p class="subtitle">Lorem ipsum descripsum</p>
+            <a href="#" class="cta">Call to action</a>
+          </div>
+        </div>
+      </section>
+      <section id="prod" class="present">
+        <div class="container">
+          <div id="tabs" class="content f-sb">
+            <div class="col">
+              <h2 class="sec-title">
+                At least somewhere you can feel new year atmosphere
+              </h2>
+              <p class="subtitle">Choose your present:</p>
+              <div class="tabs-nav f-sb">
+                <div>
+                  <a class="tabs-nav__img" href="#tab-1"
+                    ><img src="/img/new-year-sock 1.png" alt="sock image here"
+                  /></a>
+                </div>
+                <div>
+                  <a class="tabs-nav__img" href="#tab-2"
+                    ><img src="/img/caps-2.png" alt="cap image here"
+                  /></a>
+                </div>
+                <div>
+                  <a class="tabs-nav__img" href="#tab-3"
+                    ><img src="/img/new-year-bag 1.png" alt="bag image here"
+                  /></a>
+                </div>
               </div>
-              <div>
-                <a class="tabs-nav__img" href="#tab-2"
-                  ><img src="/img/caps-2.png" alt="cap image here"
-                /></a>
+            </div>
+            <div class="tabs-items col">
+              <div class="tabs-item" id="tab-1">
+                <div class="inner f-sb">
+                  <div class="tabs-item__desc">
+                    <h3 class="third-title">Best sock ever</h3>
+                    <p>
+                      Reuglar sock have no present inside Lorem Ipsum is simply
+                      dumm y text of the printing and types etting industry.
+                      Lorem
+                    </p>
+                  </div>
+                  <div class="tabs-item__img">
+                    <img src="/img/new-year-sock.png" alt="sock image here" />
+                  </div>
+                </div>
               </div>
-              <div>
-                <a class="tabs-nav__img" href="#tab-3"
-                  ><img src="/img/new-year-bag 1.png" alt="bag image here"
-                /></a>
+              <div class="tabs-item" id="tab-2">
+                <div class="inner f-sb">
+                  <div class="tabs-item__desc">
+                    <h3 class="third-title">Best cup ever</h3>
+                    <p>
+                      Reuglar cup have no present inside Lorem Ipsum is simply
+                      dumm y text of the printing and types etting industry.
+                      Lorem
+                    </p>
+                  </div>
+                  <div class="tabs-item__img">
+                    <img src="/img/new-year-sock.png" alt="sock image here" />
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-item" id="tab-3">
+                <div class="inner f-sb">
+                  <div class="tabs-item__desc">
+                    <h3 class="third-title">Best bag ever</h3>
+                    <p>
+                      Reuglar bag have no present inside Lorem Ipsum is simply
+                      dumm y text of the printing and types etting industry.
+                      Lorem
+                    </p>
+                  </div>
+                  <div class="tabs-item__img">
+                    <img src="/img/new-year-sock.png" alt="sock image here" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="tabs-items col">
-            <div class="tabs-item" id="tab-1">
-              <div class="inner f-sb">
-                <div class="tabs-item__desc">
-                  <h3 class="third-title">Best sock ever</h3>
-                  <p>
-                    Reuglar sock have no present inside Lorem Ipsum is simply
-                    dumm y text of the printing and types etting industry. Lorem
-                  </p>
+        </div>
+      </section>
+      <section id="cont" class="contact">
+        <div class="container">
+          <div class="content">
+            <div class="title">
+              <p>Write us</p>
+              <p>for real presents</p>
+            </div>
+            <form action="#" id="contactForm" class="contact-form">
+              <div class="row f-sb">
+                <div class="col">
+                  <input
+                    class="contact-form__input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Name"
+                  />
                 </div>
-                <div class="tabs-item__img">
-                  <img src="/img/new-year-sock.png" alt="sock image here" />
+                <div class="col">
+                  <input
+                    class="contact-form__input"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Phone"
+                  />
                 </div>
               </div>
-            </div>
-            <div class="tabs-item" id="tab-2">
-              <div class="inner f-sb">
-                <div class="tabs-item__desc">
-                  <h3 class="third-title">Best cup ever</h3>
-                  <p>
-                    Reuglar cup have no present inside Lorem Ipsum is simply
-                    dumm y text of the printing and types etting industry. Lorem
-                  </p>
+              <div class="row f-sb">
+                <div class="col">
+                  <select
+                    class="contact-form__input select"
+                    name="gender"
+                    id="gender"
+                  >
+                    <option id="idSelect">Gender</option>
+                    <option value="Boy">Boy</option>
+                    <option value="Girl">Girl</option>
+                  </select>
                 </div>
-                <div class="tabs-item__img">
-                  <img src="/img/new-year-sock.png" alt="sock image here" />
-                </div>
-              </div>
-            </div>
-            <div class="tabs-item" id="tab-3">
-              <div class="inner f-sb">
-                <div class="tabs-item__desc">
-                  <h3 class="third-title">Best bag ever</h3>
-                  <p>
-                    Reuglar bag have no present inside Lorem Ipsum is simply
-                    dumm y text of the printing and types etting industry. Lorem
-                  </p>
-                </div>
-                <div class="tabs-item__img">
-                  <img src="/img/new-year-sock.png" alt="sock image here" />
+                <div class="col">
+                  <input
+                    class="contact-form__input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
                 </div>
               </div>
-            </div>
+              <div class="row">
+                <textarea
+                  class="contact-form__input textarea"
+                  name="witsh"
+                  id="witsh"
+                  placeholder="Your witsh"
+                ></textarea>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input class="checkbox" type="checkbox" name="" id="" />
+                </div>
+                <div class="col">
+                  <p>Whant Coca-cola with present ?</p>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="cont" class="contact">
-      <div class="container">
-        <div class="content">
-          <div class="title">
-            <p>Write us</p>
-            <p>for real presents</p>
-          </div>
-          <form action="#" id="contactForm" class="contact-form">
-            <div class="row f-sb">
-              <div class="col">
-                <input
-                  class="contact-form__input"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Name"
-                />
-              </div>
-              <div class="col">
-                <input
-                  class="contact-form__input"
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  placeholder="Phone"
-                />
-              </div>
-            </div>
-            <div class="row f-sb">
-              <div class="col">
-                <select
-                  class="contact-form__input select"
-                  name="gender"
-                  id="gender"
-                >
-                  <option id="idSelect">Gender</option>
-                  <option value="Boy">Boy</option>
-                  <option value="Girl">Girl</option>
-                </select>
-              </div>
-              <div class="col">
-                <input
-                  class="contact-form__input"
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Email"
-                />
-              </div>
-            </div>
-            <div class="row">
-              <textarea
-                class="contact-form__input textarea"
-                name="witsh"
-                id="witsh"
-                placeholder="Your witsh"
-              ></textarea>
-            </div>
-            <div class="row">
-              <div class="col">
-                <input class="checkbox" type="checkbox" name="" id="" />
-              </div>
-              <div class="col">
-                <p>Whant Coca-cola with present ?</p>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
-      integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+
+    <script src="./js/jquery.onepage-scroll.min.js"></script>
     <script src="./js/jquery.selectric.js"></script>
     <script src="./js/script.js"></script>
   </body>
